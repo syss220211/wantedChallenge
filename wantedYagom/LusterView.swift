@@ -40,8 +40,32 @@ final class LusterView: UIView {
     }
     
     // button 을 누르면 로드 되는 함수
-    @IBAction private func touchUpLoadButton(_sender: UIButton) {
+    @IBAction private func touchUpLoadButton(_ sender: UIButton) {
         reset()
         
+        // 버튼 태그 0 - 4 받아오기
+        guard (0...4).contains(sender.tag) else {
+            fatalError("버튼 태그를 확인해주세요")
+        }
+        
+        let url = ImageURL[sender.tag]
+        let request = URLRequest(url: url)
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                fatalError(error.localizedDescription)
+            }
+            
+            guard let data = data, let image = UIImage(data: data) else {
+                self.imageView.image = .init(systemName: "xmark")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.imageView.image = image
+            }
+            
+        }
+        task.resume()
     }
 }

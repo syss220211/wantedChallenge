@@ -39,7 +39,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Load"/>
                                                         <connections>
-                                                            <action selector="touchUpLoadButtonWith_sender:" destination="KJJ-b5-v3r" eventType="touchUpInside" id="IYv-qg-amb"/>
+                                                            <action selector="touchUpLoadButton:" destination="KJJ-b5-v3r" eventType="touchUpInside" id="3yD-qm-4Ew"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -78,7 +78,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Load"/>
                                                         <connections>
-                                                            <action selector="touchUpLoadButtonWith_sender:" destination="sKn-Qi-OuP" eventType="touchUpInside" id="79r-Bz-X8t"/>
+                                                            <action selector="touchUpLoadButton:" destination="sKn-Qi-OuP" eventType="touchUpInside" id="GME-sJ-DrM"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -117,7 +117,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Load"/>
                                                         <connections>
-                                                            <action selector="touchUpLoadButtonWith_sender:" destination="sbg-Eb-0cB" eventType="touchUpInside" id="YOP-Vs-e7C"/>
+                                                            <action selector="touchUpLoadButton:" destination="sbg-Eb-0cB" eventType="touchUpInside" id="GbW-Bt-gzf"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -156,7 +156,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Load"/>
                                                         <connections>
-                                                            <action selector="touchUpLoadButtonWith_sender:" destination="2JW-Ui-K1i" eventType="touchUpInside" id="p90-65-kRm"/>
+                                                            <action selector="touchUpLoadButton:" destination="2JW-Ui-K1i" eventType="touchUpInside" id="8j2-9f-ZS6"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -195,7 +195,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Load"/>
                                                         <connections>
-                                                            <action selector="touchUpLoadButtonWith_sender:" destination="ucp-i3-jfD" eventType="touchUpInside" id="woH-Sd-2e8"/>
+                                                            <action selector="touchUpLoadButton:" destination="ucp-i3-jfD" eventType="touchUpInside" id="cPR-ag-Dwa"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -219,7 +219,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Load All Image"/>
                                         <connections>
-                                            <action selector="touchUpLoadAllImageButton:" destination="eKB-wt-qKF" eventType="touchUpInside" id="cLQ-kv-rUt"/>
+                                            <action selector="touchUpLoadAllImageButton:" destination="eKB-wt-qKF" eventType="touchUpInside" id="faL-ZB-YKO"/>
                                         </connections>
                                     </button>
                                 </subviews>
