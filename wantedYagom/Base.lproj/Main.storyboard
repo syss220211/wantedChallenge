@@ -17,27 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="yXx-NS-nTJ">
-                                <rect key="frame" x="16" y="79" width="361" height="759"/>
+                                <rect key="frame" x="16" y="79.000000000000057" width="361" height="869.33333333333348"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJJ-b5-v3r" customClass="LusterView" customModule="wantedYagom" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="134"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PRp-NU-Kfv">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="134"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="150"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Dgj-eq-Wbb">
-                                                        <rect key="frame" x="0.0" y="19.666666666666657" width="98.333333333333329" height="95"/>
+                                                        <rect key="frame" x="0.0" y="27.666666666666657" width="98.333333333333329" height="95"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Dgj-eq-Wbb" secondAttribute="height" id="dSG-6u-Ink"/>
                                                         </constraints>
                                                     </imageView>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hkv-YA-sWi">
-                                                        <rect key="frame" x="113.33333333333336" y="65" width="157.66666666666663" height="4"/>
+                                                        <rect key="frame" x="113.33333333333336" y="73" width="157.66666666666663" height="4"/>
                                                     </progressView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCw-XG-4jM">
-                                                        <rect key="frame" x="286" y="50" width="75" height="34.333333333333343"/>
+                                                        <rect key="frame" x="286" y="58" width="75" height="34.333333333333343"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                                        <connections>
+                                                            <action selector="touchUpLoadButtonWith_sender:" destination="KJJ-b5-v3r" eventType="touchUpInside" id="IYv-qg-amb"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -56,24 +59,27 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKn-Qi-OuP" customClass="LusterView" customModule="wantedYagom" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="146" width="361" height="134"/>
+                                        <rect key="frame" x="0.0" y="162" width="361" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" tag="1" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ajs-ZI-4p6">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="134"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="150"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Pxx-hK-NVn">
-                                                        <rect key="frame" x="0.0" y="19.666666666666657" width="98.333333333333329" height="95"/>
+                                                        <rect key="frame" x="0.0" y="27.666666666666657" width="98.333333333333329" height="95"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Pxx-hK-NVn" secondAttribute="height" id="qDY-YK-QGs"/>
                                                         </constraints>
                                                     </imageView>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ROW-YP-8E3">
-                                                        <rect key="frame" x="113.33333333333336" y="65" width="157.66666666666663" height="4"/>
+                                                        <rect key="frame" x="113.33333333333336" y="73" width="157.66666666666663" height="4"/>
                                                     </progressView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBS-8h-4xC">
-                                                        <rect key="frame" x="286" y="50" width="75" height="34.333333333333343"/>
+                                                        <rect key="frame" x="286" y="58" width="75" height="34.333333333333343"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                                        <connections>
+                                                            <action selector="touchUpLoadButtonWith_sender:" destination="sKn-Qi-OuP" eventType="touchUpInside" id="79r-Bz-X8t"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -92,24 +98,27 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbg-Eb-0cB" customClass="LusterView" customModule="wantedYagom" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="292" width="361" height="134"/>
+                                        <rect key="frame" x="0.0" y="324" width="361" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" tag="2" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mfb-kb-551">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="134"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="150"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BHe-os-gDF">
-                                                        <rect key="frame" x="0.0" y="19.666666666666657" width="98.333333333333329" height="95"/>
+                                                        <rect key="frame" x="0.0" y="27.666666666666657" width="98.333333333333329" height="95"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="BHe-os-gDF" secondAttribute="height" id="OKH-W6-35t"/>
                                                         </constraints>
                                                     </imageView>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VJL-ZQ-JIg">
-                                                        <rect key="frame" x="113.33333333333336" y="65" width="157.66666666666663" height="4"/>
+                                                        <rect key="frame" x="113.33333333333336" y="73" width="157.66666666666663" height="4"/>
                                                     </progressView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeI-EQ-2wa">
-                                                        <rect key="frame" x="286" y="50" width="75" height="34.333333333333343"/>
+                                                        <rect key="frame" x="286" y="58" width="75" height="34.333333333333343"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                                        <connections>
+                                                            <action selector="touchUpLoadButtonWith_sender:" destination="sbg-Eb-0cB" eventType="touchUpInside" id="YOP-Vs-e7C"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -128,24 +137,27 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2JW-Ui-K1i" customClass="LusterView" customModule="wantedYagom" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="438" width="361" height="134"/>
+                                        <rect key="frame" x="0.0" y="486" width="361" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" tag="3" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MU9-5K-jqd">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="134"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="150"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-V9-B3S">
-                                                        <rect key="frame" x="0.0" y="19.666666666666657" width="98.333333333333329" height="95"/>
+                                                        <rect key="frame" x="0.0" y="27.666666666666657" width="98.333333333333329" height="95"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Gb3-V9-B3S" secondAttribute="height" id="69l-Jb-7Xj"/>
                                                         </constraints>
                                                     </imageView>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8fW-SU-CKJ">
-                                                        <rect key="frame" x="113.33333333333336" y="65" width="157.66666666666663" height="4"/>
+                                                        <rect key="frame" x="113.33333333333336" y="73" width="157.66666666666663" height="4"/>
                                                     </progressView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Im7-Hn-WqC">
-                                                        <rect key="frame" x="286" y="50" width="75" height="34.333333333333343"/>
+                                                        <rect key="frame" x="286" y="58" width="75" height="34.333333333333343"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                                        <connections>
+                                                            <action selector="touchUpLoadButtonWith_sender:" destination="2JW-Ui-K1i" eventType="touchUpInside" id="p90-65-kRm"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -164,7 +176,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucp-i3-jfD" customClass="LusterView" customModule="wantedYagom" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="584" width="361" height="175"/>
+                                        <rect key="frame" x="0.0" y="648" width="361" height="175"/>
                                         <subviews>
                                             <stackView opaque="NO" tag="4" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="27l-SL-vT0">
                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="175"/>
@@ -176,12 +188,15 @@
                                                         </constraints>
                                                     </imageView>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O4s-m3-1VI">
-                                                        <rect key="frame" x="113.33333333333336" y="85.666666666666629" width="157.66666666666663" height="4"/>
+                                                        <rect key="frame" x="113.33333333333334" y="85.666666666666629" width="94.333333333333343" height="4"/>
                                                     </progressView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIF-Ix-7aU">
-                                                        <rect key="frame" x="286" y="70.333333333333371" width="75" height="34.333333333333343"/>
+                                                        <rect key="frame" x="222.66666666666663" y="70.333333333333371" width="138.33333333333337" height="34.333333333333343"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                                        <connections>
+                                                            <action selector="touchUpLoadButtonWith_sender:" destination="ucp-i3-jfD" eventType="touchUpInside" id="woH-Sd-2e8"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -199,6 +214,14 @@
                                             <outlet property="progressView" destination="O4s-m3-1VI" id="VWi-9T-q4c"/>
                                         </connections>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4A-oR-gkE">
+                                        <rect key="frame" x="0.0" y="835" width="361" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Load All Image"/>
+                                        <connections>
+                                            <action selector="touchUpLoadAllImageButton:" destination="eKB-wt-qKF" eventType="touchUpInside" id="cLQ-kv-rUt"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>

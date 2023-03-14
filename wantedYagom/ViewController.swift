@@ -16,7 +16,10 @@ final class ViewController: UIViewController {
         
         views.forEach { $0.reset() }
     }
-
+    @IBAction private func touchUpLoadAllImageButton(_ sender: UIButton) {
+        
+        views.forEach{ $0.loadImage() }
+    }
 
 }
 
