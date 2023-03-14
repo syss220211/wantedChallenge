@@ -11,16 +11,16 @@ import UIKit
 
 fileprivate enum ImageURL {
     private static let imageIds: [String] = [
-    "europe-4k-1369012",
-    "europe-4k-1318341",
-    "europe-4k-1379801",
-    "cool-lion-167408",
-    "iron-man-323408"
+        "europe-4k-1318341",
+        "europe-4k-1369012",
+        "europe-4k-1379801",
+        "cool-lion-167408",
+        "iron-man-323408"
     ]
     
     static subscript(index: Int) -> URL {
         let id = imageIds[index]
-        return URL(string: "http://wallpaperaccess.com/download/"+id)!
+        return URL(string: "https://wallpaperaccess.com/download/"+id)!
     }
 }
 
@@ -47,6 +47,7 @@ final class LusterView: UIView {
         guard (0...4).contains(sender.tag) else {
             fatalError("버튼 태그를 확인해주세요")
         }
+        debugPrint(sender.tag)
         
         let url = ImageURL[sender.tag]
         let request = URLRequest(url: url)
@@ -57,7 +58,9 @@ final class LusterView: UIView {
             }
             
             guard let data = data, let image = UIImage(data: data) else {
-                self.imageView.image = .init(systemName: "xmark")
+                DispatchQueue.main.async {
+                    self.imageView.image = .init(systemName: "xmark")
+                }
                 return
             }
             
