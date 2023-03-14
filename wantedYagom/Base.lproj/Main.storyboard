@@ -49,6 +49,11 @@
                                             <constraint firstItem="PRp-NU-Kfv" firstAttribute="top" secondItem="KJJ-b5-v3r" secondAttribute="top" id="Ts0-QY-8bQ"/>
                                             <constraint firstItem="PRp-NU-Kfv" firstAttribute="leading" secondItem="KJJ-b5-v3r" secondAttribute="leading" id="ZNa-yz-YiM"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="Dgj-eq-Wbb" id="pT8-i4-DXk"/>
+                                            <outlet property="loadButton" destination="KCw-XG-4jM" id="kK8-ej-vNQ"/>
+                                            <outlet property="progressView" destination="hkv-YA-sWi" id="vyA-Yu-8it"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKn-Qi-OuP" customClass="LusterView" customModule="wantedYagom" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="146" width="361" height="134"/>
@@ -80,6 +85,11 @@
                                             <constraint firstItem="Ajs-ZI-4p6" firstAttribute="top" secondItem="sKn-Qi-OuP" secondAttribute="top" id="N0g-h5-wtv"/>
                                             <constraint firstAttribute="bottom" secondItem="Ajs-ZI-4p6" secondAttribute="bottom" id="TY8-N8-thE"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="Pxx-hK-NVn" id="3Zg-jo-NB2"/>
+                                            <outlet property="loadButton" destination="gBS-8h-4xC" id="5jy-MT-scU"/>
+                                            <outlet property="progressView" destination="ROW-YP-8E3" id="b9h-WU-vIL"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbg-Eb-0cB" customClass="LusterView" customModule="wantedYagom" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="292" width="361" height="134"/>
@@ -111,6 +121,11 @@
                                             <constraint firstAttribute="bottom" secondItem="mfb-kb-551" secondAttribute="bottom" id="t8C-rm-mru"/>
                                             <constraint firstAttribute="trailing" secondItem="mfb-kb-551" secondAttribute="trailing" id="wDi-pP-WyV"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="BHe-os-gDF" id="SsC-3E-sZs"/>
+                                            <outlet property="loadButton" destination="QeI-EQ-2wa" id="o7M-FP-psx"/>
+                                            <outlet property="progressView" destination="VJL-ZQ-JIg" id="Kfk-ve-HsO"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2JW-Ui-K1i" customClass="LusterView" customModule="wantedYagom" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="438" width="361" height="134"/>
@@ -142,6 +157,11 @@
                                             <constraint firstItem="MU9-5K-jqd" firstAttribute="top" secondItem="2JW-Ui-K1i" secondAttribute="top" id="VP1-gs-M5m"/>
                                             <constraint firstAttribute="trailing" secondItem="MU9-5K-jqd" secondAttribute="trailing" id="ny1-z8-5ot"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="Gb3-V9-B3S" id="SR5-B0-Le2"/>
+                                            <outlet property="loadButton" destination="Im7-Hn-WqC" id="QC5-k4-8qW"/>
+                                            <outlet property="progressView" destination="8fW-SU-CKJ" id="Loh-G7-Qsn"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucp-i3-jfD" customClass="LusterView" customModule="wantedYagom" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="584" width="361" height="175"/>
@@ -173,6 +193,11 @@
                                             <constraint firstAttribute="trailing" secondItem="27l-SL-vT0" secondAttribute="trailing" id="UqP-Px-6Gb"/>
                                             <constraint firstItem="27l-SL-vT0" firstAttribute="leading" secondItem="ucp-i3-jfD" secondAttribute="leading" id="oag-zb-lfL"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="dKA-4N-QCn" id="4lP-9R-SD3"/>
+                                            <outlet property="loadButton" destination="EIF-Ix-7aU" id="yM7-oE-HKU"/>
+                                            <outlet property="progressView" destination="O4s-m3-1VI" id="VWi-9T-q4c"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -190,6 +215,13 @@
                             <constraint firstItem="dKA-4N-QCn" firstAttribute="width" secondItem="6hJ-i0-qgF" secondAttribute="width" multiplier="25%" id="ss6-Vx-RWE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="views" destination="KJJ-b5-v3r" collectionClass="NSMutableArray" id="iFh-E1-mIg"/>
+                        <outletCollection property="views" destination="sKn-Qi-OuP" collectionClass="NSMutableArray" id="kIK-Sm-GPx"/>
+                        <outletCollection property="views" destination="sbg-Eb-0cB" collectionClass="NSMutableArray" id="JrP-Mi-PUg"/>
+                        <outletCollection property="views" destination="2JW-Ui-K1i" collectionClass="NSMutableArray" id="XeE-5W-wNh"/>
+                        <outletCollection property="views" destination="ucp-i3-jfD" collectionClass="NSMutableArray" id="IKS-kr-7Iv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0iv-nq-yDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

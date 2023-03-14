@@ -14,7 +14,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        views.forEach { $0.reset() }
+        views.forEach { $0.reset() }
     }
 
 
