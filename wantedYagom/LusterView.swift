@@ -31,6 +31,15 @@ final class LusterView: UIView {
     
     // 프로그래스 바 설정
     private var observation: NSKeyValueObservation!
+    // 버튼 stop 표시
+    private var task: URLSessionDataTask!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        loadButton.setTitle("Stop", for: .selected)
+        loadButton.setTitle("Load", for: .normal)
+        loadButton.isSelected = false
+    }
     
     deinit {
         observation.invalidate()
@@ -40,7 +49,8 @@ final class LusterView: UIView {
     func reset() {
         imageView.image = .init(systemName: "photo")
         progressView.progress = 0
-        loadButton.isEnabled = true
+//        loadButton.isEnabled = true
+        loadButton.isSelected = false
     }
     
     func loadImage() {
@@ -49,7 +59,12 @@ final class LusterView: UIView {
     
     // button 을 누르면 로드 되는 함수
     @IBAction private func touchUpLoadButton(_ sender: UIButton) {
-        reset()
+        
+        sender.isSelected.toggle()
+        guard sender.isSelected else {
+            task.cancel()
+            return
+        }
         
         // 버튼 태그 0 - 4 받아오기
         guard (0...4).contains(sender.tag) else {
@@ -60,9 +75,15 @@ final class LusterView: UIView {
         let url = ImageURL[sender.tag]
         let request = URLRequest(url: url)
         
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in // 이미지 다운로드 끝나면 {} 실행
+        task = URLSession.shared.dataTask(with: request) { data, response, error in // 이미지 다운로드 끝나면 {} 실행
             if let error = error {
-                fatalError(error.localizedDescription)
+                guard error.localizedDescription == "cancelled" else {
+                    fatalError(error.localizedDescription)
+                }
+                DispatchQueue.main.async {
+                    self.reset()
+                }
+                return
             }
             // 여기까지 다 main thread에서 작업 (화면에서 조작 = main thread에서 작업)
             guard let data = data, let image = UIImage(data: data) else {
@@ -76,6 +97,7 @@ final class LusterView: UIView {
             
             DispatchQueue.main.async {
                 self.imageView.image = image
+                self.loadButton.isSelected = false
             }
         }
     
