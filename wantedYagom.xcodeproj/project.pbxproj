@@ -51,6 +51,7 @@
 		D5254E2029B60FA3007C9CA9 /* wantedYagomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wantedYagomUITests.swift; sourceTree = "<group>"; };
 		D5254E2229B60FA3007C9CA9 /* wantedYagomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wantedYagomUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D5254E2F29B60FDF007C9CA9 /* LusterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LusterView.swift; sourceTree = "<group>"; };
+		D544458729C35E1500D25D9F /* aboutDispatchQueue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = aboutDispatchQueue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		D5254DF329B60FA2007C9CA9 = {
 			isa = PBXGroup;
 			children = (
+				D544458429C35CFF00D25D9F /* DispatchQueue */,
 				D5254DFE29B60FA2007C9CA9 /* wantedYagom */,
 				D5254E1529B60FA3007C9CA9 /* wantedYagomTests */,
 				D5254E1F29B60FA3007C9CA9 /* wantedYagomUITests */,
@@ -128,6 +130,14 @@
 				D5254E2229B60FA3007C9CA9 /* wantedYagomUITestsLaunchTests.swift */,
 			);
 			path = wantedYagomUITests;
+			sourceTree = "<group>";
+		};
+		D544458429C35CFF00D25D9F /* DispatchQueue */ = {
+			isa = PBXGroup;
+			children = (
+				D544458729C35E1500D25D9F /* aboutDispatchQueue.playground */,
+			);
+			path = DispatchQueue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
