@@ -52,6 +52,7 @@
 		D5254E2229B60FA3007C9CA9 /* wantedYagomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wantedYagomUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D5254E2F29B60FDF007C9CA9 /* LusterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LusterView.swift; sourceTree = "<group>"; };
 		D544458729C35E1500D25D9F /* aboutDispatchQueue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = aboutDispatchQueue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D5B7D60C29C605EA004E018E /* aboutOperationQueue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = aboutOperationQueue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				D544458729C35E1500D25D9F /* aboutDispatchQueue.playground */,
+				D5B7D60C29C605EA004E018E /* aboutOperationQueue.playground */,
 			);
 			path = DispatchQueue;
 			sourceTree = "<group>";
